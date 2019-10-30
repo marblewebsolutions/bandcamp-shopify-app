@@ -8,6 +8,7 @@ import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
+  fetch: fetch,
   fetchOptions: {
     credentials: 'include'
   },
